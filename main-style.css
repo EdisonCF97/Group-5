@@ -1,0 +1,131 @@
+*, *::before, *::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.about{
+    color: rgba(88, 24, 64, 1);
+    width: 60%;
+    margin: 10px;
+}
+
+.about-description{
+    word-break: break-word;
+}
+
+.background{
+    flex-grow: 0.5;
+    min-height: 80vh;
+    background-image: url("https://specials-images.forbesimg.com/imageserve/64e8feec3b95a18f1bd8ae1f/0x0.jpeg");
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 50px;
+    width: 100%;
+}
+
+.maroon-stripe, .yellow-stripe{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    z-index: -1;
+}
+
+.maroon-stripe{
+    background-color: rgba(88, 24, 64, 1);
+    left: -25px;
+    bottom: -25px;
+}
+
+.yellow-stripe{
+    background-color: rgba(243, 189, 48, 1);
+    right: -25px;
+    top: -25px;
+}
+
+.majors{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 50px;
+    row-gap: 25px;
+    padding: 25px;
+}
+
+button{
+    color: white;
+    background-color: rgba(88, 24, 64, 1);
+    border-radius: 10px;
+    width: 175px;
+    height: 300px;
+    border: none;
+    word-break: break-word;
+    padding: 10px;
+}
+
+button:hover{
+    background-color: rgba(243, 189, 48, 1);
+    cursor: pointer;
+}
+
+.cs-major, .ac-major{
+    margin-bottom: 25px;
+}
+
+.bm-major, .is-major{
+    margin-top: 25px;
+}
+
+@media (max-width: 1200px){
+    .background{
+        width: 75%;
+    }
+}
+
+@media (max-width: 850px){
+    .container{
+        flex-direction: column;
+    }
+
+    .about, .background{
+        width: 80%;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 600px){
+    .majors{
+        grid-template-columns: 1fr;
+    }
+
+    .majors > button{
+        width: 300px;
+        height: 175px;
+        margin: 0px;
+    }
+}
+
+.fadein{
+    animation-name: fadein-animation;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes fadein-animation{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
