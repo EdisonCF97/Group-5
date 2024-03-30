@@ -17,24 +17,25 @@ majors.addEventListener("mouseover", (e => {
             Through a balanced program of commercial, scientific, and theoretical courses, you will become \
             a competent programmer and analyst who can keep pace with rapid changes in the field.";
             break;
-        case "bm-major":
-            target.innerText = "The Department of Business Management, through its committed academic faculty, industry \
-            experts, and dedicated staff, provides students with the knowledge and skills in business management necessary \
-            to succeed in a wide range of professional careers in management, human resource management, operations \
-            management, business analytics, marketing, and international business in small and large companies as well \
-            as in non-for-profit organizations.";
-            break;
         case "ac-major":
             target.innerText = "As an accounting major, you will learn key accounting principles and sharpen your \
             analytic and communication skills. This degree will provide you with a foundation in general business \
             practices, an understanding of accounting concepts and theory, and the accounting skills needed for jobs \
             in business or government.";
             break;
-        case "is-major":
-            target.innerText = "As an information systems major, you will choose a double major, such as business \
-            and accounting, or select a minor in business law, corporate social responsibility, marketing, \
-            organizational behavior, small business management, or urban entrepreneurship. This degree is \
-            offered in conjunction with the Department of Computer and Information Science.";
+        case "en-major":
+            target.innerText = "Whether you would like to be a published writer, an acclaimed poet, or a hard-hitting \
+            journalist, an English degree will help you achieve your goals. Or, maybe you are interested in comparative \
+            literature, linguistics, or teaching; majoring in English supports these dreams, too. By majoring in English, \
+            you will study the work of critically acclaimed authors, and develop the reading, writing, and critical thinking \
+            skills prized in fields from public relations to law.";
+            break;
+        case "md-major":
+            target.innerText = "Media literacy is essential to living and working in our rapidly evolving, digitally \
+            connected world. Through our small, seminar-style classes, led by accomplished faculty, students will \
+            develop a deep understanding of media theory, media law, media management, digital environments, and more. \
+            Students gain in-depth knowledge of television, radio, and digital media industries as well perspectives on \
+            media more broadly.";
             break;
         default:
             break;
@@ -55,14 +56,14 @@ majors.addEventListener("mouseout", (e => {
         case "cs-major":
             target.innerText = "Computer Science";
             break;
-        case "bm-major":
-            target.innerText = "Business Management";
-            break;
         case "ac-major":
             target.innerText = "Accounting";
             break;
-        case "is-major":
-            target.innerText = "Information Systems";
+        case "en-major":
+            target.innerText = "English";
+            break;
+        case "md-major":
+            target.innerText = "Media";
             break;
         default:
             break;
