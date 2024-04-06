@@ -1,4 +1,5 @@
 const majors = document.querySelector(".majors");
+const jsConfetti = new JSConfetti() //needed for the confetti animation.
 
 majors.addEventListener("mouseover", (e => {
     const target = e.target;
@@ -69,3 +70,22 @@ majors.addEventListener("mouseout", (e => {
             break;
     }
 }));
+
+const shareBtn = document.querySelector("#shareBtn");//Share button functionality
+shareBtn.addEventListener("click", (event) => {
+    if (navigator.share) {
+        navigator.share({
+            title: "BC Course Map",
+            url: "https://edisoncf97.github.io/Group-5.github.io/",
+        }).then(() => {
+            console.log("Thanks for sharing!");
+            jsConfetti.addConfetti();
+        }).catch((err) => {
+            console.log("Error using Web share API :")
+            console.log(err);
+        })
+    }
+    else {
+        alert("Browser doesn't support this Web share API")
+    }
+})
