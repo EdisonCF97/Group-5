@@ -1,0 +1,65 @@
+*, *::before, *::after{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 100px;
+}
+
+.top-section{
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.bottom-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+    column-gap: 50px;
+    min-height: 100vh;
+    padding: 50px;
+}
+
+.bottom-section > div{
+    position: relative;
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    row-gap: 75px;
+}
+
+.invisible{
+    opacity: 0;
+}
+
+.invisible:hover{
+    cursor: default;
+}
+
+button{
+    color: white;
+    background-color: black;
+    border-radius: 5%;
+    padding: 10px;
+    border: none;
+    word-break: break-word;
+    width: 150px;
+    height: 80px;
+    margin: 2px;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.start{
+    position: absolute;
+    right: 450px;
+    width: 100px;
+    height: 100px;
+}
