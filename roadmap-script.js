@@ -16,7 +16,7 @@ window.onload = () => {
         "#ddedea"
     ];
 
-    document.querySelectorAll("div.bottom-section button").forEach(
+    document.querySelectorAll("div.container button").forEach(
         e => e.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)]
     );
 }
