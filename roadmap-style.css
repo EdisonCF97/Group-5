@@ -56,10 +56,13 @@ button{
     width: 150px;
     height: 80px;
     margin: 2px;
+    transition: all 0.3s;
 }
 
 button:hover{
     cursor: pointer;
+    transform: translateX(-5px);
+    transform: translateY(-5px);
 }
 
 .cs-start, .ac-start, .en-start{
