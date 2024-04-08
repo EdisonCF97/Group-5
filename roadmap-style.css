@@ -6,6 +6,10 @@
 }
 
 body{
+    background-image: url('BK.jpg');
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: rgba(205, 205, 205, 1)
 }
 
@@ -87,7 +91,7 @@ button:hover{
 }
 
 .english-courses-description{
-    color: rgba(88, 23, 46, 1);
+    color: rgba(253, 243, 204, 0.789);
     margin: 10px;
 }
 
