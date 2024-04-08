@@ -22,6 +22,7 @@ body{
 }
 
 .bottom-section{
+    position: relative;
     display: flex;
     justify-content: space-around;
     align-items: start;
@@ -61,18 +62,31 @@ button:hover{
     cursor: pointer;
 }
 
-.cs-start{
+.cs-start, .ac-start, .en-start{
     position: absolute;
-    right: 450px;
     width: 100px;
     height: 100px;
 }
 
+.cs-start{
+    right: 450px;
+}
+
 .ac-start{
-    position: absolute;
     left: 600px;
-    width: 100px;
-    height: 100px;
+}
+
+.en-start{
+    top: -100px;
+}
+
+.english-courses-description{
+    color: rgba(88, 23, 46, 1);
+    margin: 10px;
+}
+
+ul > li{
+    padding: 5px;
 }
 
 .navigation-bar{
