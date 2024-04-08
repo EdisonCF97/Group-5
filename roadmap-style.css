@@ -68,13 +68,13 @@ button:hover{
     transform: translateY(-5px);
 }
 
-.cs-start, .ac-start, .en-start{
+.cs-start, .ac-start, .en-start, .md-start{
     position: absolute;
     width: 100px;
     height: 100px;
 }
 
-.cs-start{
+.cs-start, .md-start{
     right: 450px;
 }
 
