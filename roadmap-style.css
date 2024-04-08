@@ -61,9 +61,16 @@ button:hover{
     cursor: pointer;
 }
 
-.start{
+.cs-start{
     position: absolute;
     right: 450px;
+    width: 100px;
+    height: 100px;
+}
+
+.ac-start{
+    position: absolute;
+    left: 600px;
     width: 100px;
     height: 100px;
 }
