@@ -5,19 +5,13 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-
 body{
-    background-image: url('BK.jpg');
-	background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     background-color: rgba(205, 205, 205, 1)
 }
 
 .container{
-    font-size: 40px;
     display: flex;
-    text-align: justify;
+    justify-content: space-between;
     align-items: center;
     min-height: 100vh;
 }
@@ -29,12 +23,12 @@ body{
 
 .about, .mission-statement{
     padding: 12px;
-    color: rgba(253, 243, 204, 0.789);
+    color: rgba(88, 23, 46, 1);
     margin: 10px;
 }
 
 .mission-statement{
-    font-size: 30px;
+    font-size: 20px;
 }
 
 .background{
@@ -79,7 +73,6 @@ body{
 }
 
 .container button{
-    overflow: auto;
     color: white;
     border-radius: 10px;
     width: 175px;
@@ -87,25 +80,6 @@ body{
     border: none;
     word-break: break-word;
     padding: 10px;
-    
-}
-
-::-webkit-scrollbar-track
-{
-    box-shadow: inset 0 0 15px rgba(0,0,0,0.5);
-    border-radius: 10px;
-}
-
-::-webkit-scrollbar
-{
-    width: 5px;
-    
-}
-
-::-webkit-scrollbar-thumb
-{
-    background: #fff;
-    border-radius: 10px;
 }
 
 .cs-major, .en-major{
@@ -137,11 +111,6 @@ body{
     border-radius: 5px;
 }
 
-.logo {
-    margin-left: -620px;
-    width: 50px;
-}
-
 .nav-link > a{
     display: inline;
     float: left;
@@ -157,7 +126,7 @@ body{
 }
 
 .nav-title{
-    margin-left: 75px;
+    margin-left: 35px;
 }
 
 .nav-cs-major:hover, .nav-en-major:hover{
