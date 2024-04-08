@@ -32,11 +32,10 @@ majors.addEventListener("mouseover", (e => {
             skills prized in fields from public relations to law.";
             break;
         case "md-major":
-            target.innerText = "Media literacy is essential to living and working in our rapidly evolving, digitally \
-            connected world. Through our small, seminar-style classes, led by accomplished faculty, students will \
-            develop a deep understanding of media theory, media law, media management, digital environments, and more. \
-            Students gain in-depth knowledge of television, radio, and digital media industries as well perspectives on \
-            media more broadly.";
+            target.innerText = "As a student in the multimedia computing program, you will develop computing skills specifically \
+            for use in developing and maintaining multimedia software. You’ll learn how to create digital content with 2D and 3D \
+            animation, and audio and video material. You will also learn how to develop web pages and design user interfaces. If \
+            you are looking to enter a cutting-edge, creative career, the Bachelor of Science in multimedia computing is for you.";
             break;
         default:
             break;
