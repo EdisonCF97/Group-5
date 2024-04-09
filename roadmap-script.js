@@ -22,6 +22,12 @@ window.onload = () => {
     );
 }
 
+document.querySelectorAll("div.container button").forEach(button => {
+    button.addEventListener('click', function() {
+        this.classList.toggle('green-shadow');
+    });
+});
+
 
 const shareBtn = document.querySelector("#shareBtn");//Share button functionality
 shareBtn.addEventListener("click", (event) => {
