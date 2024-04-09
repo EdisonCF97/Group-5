@@ -81,9 +81,11 @@ button.green-shadow {
 }
 
 .english-courses-description{
-    color: rgba(88, 23, 46, 1);
+    color: rgba(253, 243, 204, 0.789);
     margin: 10px;
 }
+
+
 
 ul > li{
     padding: 5px;
