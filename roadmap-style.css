@@ -6,6 +6,10 @@
 }
 
 body{
+    background-image: url('BK.jpg');
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     background-color: rgba(205, 205, 205, 1)
 }
 
