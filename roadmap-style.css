@@ -6,10 +6,6 @@
 }
 
 body{
-    background-image: url('BK.jpg');
-	background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     background-color: rgba(205, 205, 205, 1)
 }
 
@@ -17,7 +13,6 @@ body{
     margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr;
-    row-gap: 100px;
 }
 
 .top-section{
@@ -38,9 +33,9 @@ body{
 .bottom-section > div{
     position: relative;
     display: flex;
+    align-items: center;
     flex-shrink: 0;
     flex-direction: column;
-    row-gap: 75px;
 }
 
 .invisible{
@@ -58,8 +53,7 @@ button{
     border: none;
     word-break: break-word;
     width: 150px;
-    height: 80px;
-    margin: 2px;
+    height: 75px;
     transition: all 0.3s;
     box-shadow: 5px 5px 7px rgba(0,0,0,0.25), 
     inset 2px 2px 5px rgba(0,0,0,0.5), 
@@ -72,26 +66,13 @@ button:hover{
     transform: translateY(-5px);
 }
 
-.cs-start, .ac-start, .en-start, .md-start{
-    position: absolute;
+.start-square{
     width: 100px;
     height: 100px;
 }
 
-.cs-start, .md-start{
-    right: 450px;
-}
-
-.ac-start{
-    left: 600px;
-}
-
-.en-start{
-    top: -100px;
-}
-
 .english-courses-description{
-    color: rgba(253, 243, 204, 0.789);
+    color: rgba(88, 23, 46, 1);
     margin: 10px;
 }
 
@@ -182,4 +163,32 @@ ul > li{
 .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
+}
+
+.arrow{
+    height: 37px;
+    position: relative;
+    transform: rotate(180deg);
+    z-index: -1;
+}
+
+.line, .left-arrow, .right-arrow{
+    position: absolute;
+    border: none;
+    border-left: 2px solid black;
+    height: 37px;
+}
+
+.left-arrow{
+    height: 15px;
+    transform: rotate(45deg);
+    left: -5px;
+    top: -2px;
+}
+
+.right-arrow{
+    height: 15px;
+    transform: rotate(135deg);
+    right: -7px;
+    top: -2px;
 }
