@@ -179,7 +179,7 @@ ul > li{
 .line, .left-arrow, .right-arrow{
     position: absolute;
     border: none;
-    border-left: 2px solid black;
+    border-left: 2px solid white;
     height: 37px;
 }
 
